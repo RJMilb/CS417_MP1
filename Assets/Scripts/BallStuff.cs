@@ -45,16 +45,28 @@ public class PhysicsOrbit : MonoBehaviour
         Vector3 directionToTarget = targetBody.position - transform.position;
         float distance = directionToTarget.magnitude;
 
-        // 2. Calculate the required orbital speed for a stable circular orbit: v = sqrt((G * M) / r)
-        // Note: Using targetBody.mass assuming its mass dictates the pull strength
+        if (distance == 0f) return;
+
+        // 2. Calculate the required orbital speed for a stable circular orbit
         float orbitalSpeed = Mathf.Sqrt((gravitationalConstant * targetBody.mass) / distance);
 
-        // 3. Find a perpendicular vector (tangent) along the orbit plane
-        // We use Vector3.up as our orbital plane normal
-        Vector3 tangentDirection = Vector3.Cross(directionToTarget.normalized, transform.forward).normalized;
+        // 3. Project the controller's forward direction onto the orbital plane.
+        // This removes any accidental 'away' or 'toward' movement, keeping the orbit stable.
+        Vector3 normalToTarget = directionToTarget.normalized;
+        Vector3 forwardDirection = transform.forward;
+
+        // Project forward onto the plane perpendicular to the target
+        Vector3 stableTangent = Vector3.ProjectOnPlane(forwardDirection, normalToTarget).normalized;
+
+        // If the player points directly at the center, ProjectOnPlane becomes zero. 
+        // Fall back to a default cross product so the physics don't break.
+        if (stableTangent == Vector3.zero)
+        {
+            stableTangent = Vector3.Cross(normalToTarget, transform.up).normalized;
+        }
 
         // 4. Inject the initial velocity directly into the Rigidbody
-        myBody.linearVelocity = tangentDirection * orbitalSpeed;
+        myBody.linearVelocity = stableTangent * orbitalSpeed;
     }
 
     private void ApplyGravitationalPull()
