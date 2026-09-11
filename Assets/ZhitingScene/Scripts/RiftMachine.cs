@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RiftMachine : MonoBehaviour
 {
-    public Light blueLight;
+ public Light blueLight;
     public GameObject earth;
 
     public ParticleSystem yellowEffect;
@@ -15,7 +15,7 @@ public class RiftMachine : MonoBehaviour
         {
             Debug.Log("Machine Start");
             blueLight.intensity = 50f;
-            Instantiate(earth, transform.position + new Vector3(0, 0.33f, 0), Quaternion.identity);
+            Instantiate(earth, transform.position + new Vector3(0, 3f, 0), Quaternion.identity);
             yellowEffect.Play();
         }
     }
