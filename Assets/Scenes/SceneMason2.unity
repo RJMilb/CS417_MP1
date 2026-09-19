@@ -309,7 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   attractor: {fileID: 290317116}
   velocity: {x: 2, y: 0, z: 0}
-  gravity: 0.2
+  gravity: 30
   speed: 1
 --- !u!135 &207313250
 SphereCollider:
