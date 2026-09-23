@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 313275975200150328}
   m_Layer: 0
   m_Name: Grab point
-  m_TagString: Untagged
+  m_TagString: Tool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,6 +66,22 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 04f2bab5eb13736478f88351a1d64bee, type: 3}
       propertyPath: m_Name
       value: Pipe_Wrench
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 04f2bab5eb13736478f88351a1d64bee, type: 3}
+      propertyPath: m_TagString
+      value: Tool
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 04f2bab5eb13736478f88351a1d64bee, type: 3}
+      propertyPath: m_TagString
+      value: Tool
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 04f2bab5eb13736478f88351a1d64bee, type: 3}
+      propertyPath: m_TagString
+      value: Tool
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 04f2bab5eb13736478f88351a1d64bee, type: 3}
+      propertyPath: m_TagString
+      value: Tool
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04f2bab5eb13736478f88351a1d64bee, type: 3}
       propertyPath: m_LocalPosition.x
