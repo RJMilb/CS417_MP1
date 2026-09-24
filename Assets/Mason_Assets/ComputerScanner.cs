@@ -7,7 +7,7 @@ public class ComputerScanner : MonoBehaviour
 {
     public GameObject correctKeycard;
     public TMP_Text statusText;
-
+    public LockProgress lockProgress;
     private bool authenticated = false;
 
     public void ScanCard(SelectEnterEventArgs args)
@@ -19,6 +19,7 @@ public class ComputerScanner : MonoBehaviour
         if (card == correctKeycard)
         {
             authenticated = true;
+            lockProgress.CompleteLock();
             statusText.text = "Access Granted\nComputer Unlocked";
         }
         else
