@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class Fixable : MonoBehaviour
 {
     [SerializeField] private string targetTag = "Enemy"; // The tag of the specific object
-    public UnityEvent onSpecificCollision; // The event that will fire
+    public UnityEvent onSpecificCollision, onHit; // The event that will fire
     public int hits = 1;
     private int hits_recived = 0;
     public Collider me;
@@ -14,6 +14,7 @@ public class Fixable : MonoBehaviour
         if (other.CompareTag(targetTag))
         {
             hits_recived++;
+            onHit.Invoke();
             //onSpecificCollision.Invoke();
         }
     }
