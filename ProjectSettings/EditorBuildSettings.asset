@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MaintenanceRoom.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/BatteryRoom.unity
+    guid: 9ca4666bdb5e5504faf53cd1e9a26967
+  - enabled: 1
+    path: Assets/Scenes/TimeRoom.unity
+    guid: d68ee02b4a8ab61498eb7fe0b1227812
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2240aeaf4ab6df74386a77dcf312f352, type: 2}

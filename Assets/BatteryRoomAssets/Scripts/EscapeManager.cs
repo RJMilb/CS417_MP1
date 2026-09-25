@@ -31,6 +31,12 @@ public class EscapeManager : MonoBehaviour
 
     public LossTimer lossTimer;
 
+    public Transform doorLeft;
+    public Transform doorRight;
+    public float doorSlideDistance = 1f;
+    public float doorOpenDuration = 1.5f;
+
+
     public void MarkContainerComplete()
     {
         containerComplete = true;
@@ -92,6 +98,8 @@ public class EscapeManager : MonoBehaviour
             Rigidbody batteryRb = batteryObject.GetComponent<Rigidbody>();
             Debug.Log("找到的Rigidbody是: " + batteryRb);
             if (batteryRb != null) batteryRb.isKinematic = false;
+
+            StartCoroutine(OpenDoors());
         }
 
         
@@ -114,6 +122,32 @@ public class EscapeManager : MonoBehaviour
         }
 
         obj.position = end;
+    }
+
+    IEnumerator OpenDoors()
+    {
+        if (doorLeft == null || doorRight == null) yield break;
+
+        Vector3 leftStart = doorLeft.position;
+        Vector3 rightStart = doorRight.position;
+
+        Vector3 leftEnd = leftStart + new Vector3(-doorSlideDistance, 0, 0);
+        Vector3 rightEnd = rightStart + new Vector3(doorSlideDistance, 0, 0);
+
+        float elapsed = 0f;
+
+        while (elapsed < doorOpenDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / doorOpenDuration;
+            doorLeft.position = Vector3.Lerp(leftStart, leftEnd, t);
+            doorRight.position = Vector3.Lerp(rightStart, rightEnd, t);
+            yield return null;
+        }
+
+        doorLeft.position = leftEnd;
+        doorRight.position = rightEnd;
+
     }
 
 }

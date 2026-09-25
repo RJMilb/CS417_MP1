@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
@@ -8,13 +9,14 @@ public class ContainerSocketGlow : MonoBehaviour
     public ParticleSystem cupParticle;
     public EscapeManager escapeManager;
     public XRGrabInteractable container;
+    public float fadeDuration = 0.3f;
 
     public Vector3 insertOffset;
 
     public void OnContainerInserted()
     {
-        cupRender.material.EnableKeyword("_EMISSION");
-        cupRender.material.SetColor("_EmissionColor", glowColor);
+
+        StartCoroutine(FadeInGlow());
         cupParticle.Play();
 
         container.enabled = false;
@@ -25,5 +27,20 @@ public class ContainerSocketGlow : MonoBehaviour
         container.transform.rotation = transform.rotation;
 
         if (escapeManager != null) escapeManager.MarkContainerComplete();
+    }
+
+    IEnumerator FadeInGlow()
+    {
+        cupRender.material.EnableKeyword("_EMISSION");
+        float elapsed = 0f;
+
+        while(elapsed < fadeDuration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / fadeDuration;
+            cupRender.material.SetColor("_EmissionColor", glowColor * t);
+            yield return null;
+        }
+        cupRender.material.SetColor("_EmissionColor", glowColor);
     }
 }
