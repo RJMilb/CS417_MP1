@@ -37,11 +37,11 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ShellCap
+  - CellContainer
+  - CellContent
+  - Lever
+  - Battery
   - 
   - 
   - Teleport
