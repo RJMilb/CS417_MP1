@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 17d488b162f03dc4a96d9e5eb1ca0601
+guid: 5cfcdb83b6cd95c4b840bcf1e121106a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,18 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Maple
-    second: {fileID: 2100000, guid: 7c5edc92f45ab0d47a0e95edbeb2489c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Maple_Billboard
-    second: {fileID: 2100000, guid: fa1226b79e96aa84897ae06341c91fe6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Oak
-    second: {fileID: 2100000, guid: 7c5edc92f45ab0d47a0e95edbeb2489c, type: 2}
+      name: Flower_Color
+    second: {fileID: 2100000, guid: 3ed221cd290a9e148a0b1c36cd30be26, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -110,7 +100,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
@@ -129,5 +119,5 @@ AssetOrigin:
   productId: 348442
   packageName: 'Skog: Temperate'
   packageVersion: 1.0
-  assetPath: Assets/BatteryRoomAssets/ThirdParty/Maple/Maple.fbx
+  assetPath: Assets/Skog/Prefabs/Flower/Meshes/Flower.fbx
   uploadId: 828730

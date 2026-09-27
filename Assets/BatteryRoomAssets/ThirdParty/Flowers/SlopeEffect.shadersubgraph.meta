@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4554e1f4a2527c14c93e8d117582fb22
+guid: 1be872312c182ee44a77b2f9c7e83597
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -13,5 +13,5 @@ AssetOrigin:
   productId: 348442
   packageName: 'Skog: Temperate'
   packageVersion: 1.0
-  assetPath: Assets/Skog/Shaders/SubGraphs/SplatTint.shadersubgraph
+  assetPath: Assets/BatteryRoomAssets/ThirdParty/Maple/SlopeEffect.shadersubgraph
   uploadId: 828730

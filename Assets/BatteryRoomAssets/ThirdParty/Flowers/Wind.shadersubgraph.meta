@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8e60feb5ecc9b4b45bbaf427dd31c4de
+guid: 2841806e011b96f4f8736a26f38b6b80
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -13,5 +13,5 @@ AssetOrigin:
   productId: 348442
   packageName: 'Skog: Temperate'
   packageVersion: 1.0
-  assetPath: Assets/Skog/Shaders/SubGraphs/AlphaFading.shadersubgraph
+  assetPath: Assets/BatteryRoomAssets/ThirdParty/Maple/Wind.shadersubgraph
   uploadId: 828730

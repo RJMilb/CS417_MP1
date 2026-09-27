@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 11e401370d4b74a4d85c6e30c5e1f154
+guid: 8e60feb5ecc9b4b45bbaf427dd31c4de
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -13,5 +13,5 @@ AssetOrigin:
   productId: 348442
   packageName: 'Skog: Temperate'
   packageVersion: 1.0
-  assetPath: Assets/Skog/Shaders/SubGraphs/RandomTint.shadersubgraph
+  assetPath: Assets/BatteryRoomAssets/ThirdParty/Maple/AlphaFading.shadersubgraph
   uploadId: 828730

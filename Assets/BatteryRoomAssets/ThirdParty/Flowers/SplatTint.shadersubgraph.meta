@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9a2b9eb74eca67d4fa129e0d60db975a
+guid: 4554e1f4a2527c14c93e8d117582fb22
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -13,5 +13,5 @@ AssetOrigin:
   productId: 348442
   packageName: 'Skog: Temperate'
   packageVersion: 1.0
-  assetPath: Assets/Skog/Shaders/SubGraphs/Translucency.shadersubgraph
+  assetPath: Assets/BatteryRoomAssets/ThirdParty/Maple/SplatTint.shadersubgraph
   uploadId: 828730

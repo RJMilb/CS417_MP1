@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ca4efa117b00c7f41b8d1468606e8a0f
+guid: c5f5b4e586e93d341bb95a6449a7a3b9
 PrefabImporter:
   externalObjects: {}
   userData: 
@@ -10,5 +10,5 @@ AssetOrigin:
   productId: 348442
   packageName: 'Skog: Temperate'
   packageVersion: 1.0
-  assetPath: Assets/BatteryRoomAssets/ThirdParty/Maple/Maple.prefab
+  assetPath: Assets/Skog/Prefabs/Flower/Flower.prefab
   uploadId: 828730

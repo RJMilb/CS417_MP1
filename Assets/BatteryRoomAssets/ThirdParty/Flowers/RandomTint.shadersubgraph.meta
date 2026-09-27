@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2841806e011b96f4f8736a26f38b6b80
+guid: 11e401370d4b74a4d85c6e30c5e1f154
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -13,5 +13,5 @@ AssetOrigin:
   productId: 348442
   packageName: 'Skog: Temperate'
   packageVersion: 1.0
-  assetPath: Assets/Skog/Shaders/SubGraphs/Wind.shadersubgraph
+  assetPath: Assets/BatteryRoomAssets/ThirdParty/Maple/RandomTint.shadersubgraph
   uploadId: 828730

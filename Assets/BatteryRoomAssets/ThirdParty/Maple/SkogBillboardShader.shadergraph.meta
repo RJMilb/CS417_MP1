@@ -13,5 +13,5 @@ AssetOrigin:
   productId: 348442
   packageName: 'Skog: Temperate'
   packageVersion: 1.0
-  assetPath: Assets/Skog/Shaders/SkogBillboardShader.shadergraph
+  assetPath: Assets/BatteryRoomAssets/ThirdParty/Maple/SkogBillboardShader.shadergraph
   uploadId: 828730
