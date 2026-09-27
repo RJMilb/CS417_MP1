@@ -38,10 +38,28 @@ public class WinSystem : MonoBehaviour
         CheckWin();
     }
 
+    public void MarkFingerprint()
+    {
+        fingerPrint = true;
+        CheckWin();
+    }
+
+    public void MarkTool()
+    {
+        tool = true;
+        CheckWin();
+    }
+
+    public void MarkTimeCode()
+    {
+        timeCode = true;
+        CheckWin();
+    }
+
     void CheckWin()
     {
         if (hasWon) return;
-        if (batteryInserted) //&& fingerPrint && tool && timeCode
+        if (batteryInserted && fingerPrint && tool && timeCode)
         {
             hasWon = true;
             StartCoroutine(PlayWinSequence());

@@ -305,7 +305,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1244024372759254, guid: 05025ad8d71ef4d4ba078f18cd08bcd8, type: 3}
       propertyPath: m_Name
-      value: EnergyCell_1_15
+      value: EnergyCell
       objectReference: {fileID: 0}
     - target: {fileID: 4823597852503192, guid: 05025ad8d71ef4d4ba078f18cd08bcd8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -346,6 +346,10 @@ PrefabInstance:
     - target: {fileID: 4823597852503192, guid: 05025ad8d71ef4d4ba078f18cd08bcd8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827162072572067416, guid: 05025ad8d71ef4d4ba078f18cd08bcd8, type: 3}
+      propertyPath: m_Mass
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4258,7 +4262,7 @@ Transform:
   m_GameObject: {fileID: 1862525304}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.003, y: 0.126, z: 0.56}
+  m_LocalPosition: {x: 2.482, y: 0.126, z: -0.814}
   m_LocalScale: {x: 0.015470921, y: 0.23675089, z: 0.2403}
   m_ConstrainProportionsScale: 0
   m_Children:
