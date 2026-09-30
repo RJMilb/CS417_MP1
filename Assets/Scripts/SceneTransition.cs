@@ -9,7 +9,7 @@ public class SceneTransition : MonoBehaviour
     {
         MaintenanceRoom,
         GardenRoom,
-        ComputerRoom,
+        ComputerRoomRecovered,
         BatteryRoom,
         TimeRoom
     }
