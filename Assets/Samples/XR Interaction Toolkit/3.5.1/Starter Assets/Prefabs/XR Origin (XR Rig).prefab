@@ -955,9 +955,10 @@ GameObject:
   - component: {fileID: 5826056641483426609}
   - component: {fileID: 5033801203051696737}
   - component: {fileID: 7783076334014282387}
+  - component: {fileID: 7417922232028887605}
   m_Layer: 2
   m_Name: XR Origin (XR Rig)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1104,6 +1105,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Quit
   action: {fileID: -6445355149149044595, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &7417922232028887605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717954561962503725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d3ec92ade0f464ba9fa5677e6965e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSceneSpawner
+  spawnPointTag: PlayerSpawnPoint
+  defaultSpawnName: PlayerSpawn
+  matchSpawnRotation: 1
 --- !u!1 &1787516059220952802
 GameObject:
   m_ObjectHideFlags: 0

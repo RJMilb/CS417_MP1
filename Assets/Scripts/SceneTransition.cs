@@ -10,7 +10,8 @@ public class SceneTransition : MonoBehaviour
         MaintenanceRoom,
         GardenRoom,
         ComputerRoom,
-        BatteryRoom
+        BatteryRoom,
+        TimeRoom
     }
 
     [Header("Destination")]
