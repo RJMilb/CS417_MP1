@@ -2002,7 +2002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
   m_InteractionManager: {fileID: 0}
   m_InteractionLayers:
-    m_Bits: 8
+    m_Bits: 67108864
   m_Handedness: 0
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
@@ -2795,7 +2795,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4030802598477255710, guid: 31eae3414a0b71e4e961dcd9ffb2d4dd, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 4294967295
+      value: 50331651
       objectReference: {fileID: 0}
     - target: {fileID: 1244024372759254, guid: 31eae3414a0b71e4e961dcd9ffb2d4dd, type: 3}
       propertyPath: m_Name
@@ -8993,7 +8993,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 9
+    m_Bits: 67108867
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -9283,6 +9283,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4030802598477255710, guid: 05025ad8d71ef4d4ba078f18cd08bcd8, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 268435459
+      objectReference: {fileID: 0}
     - target: {fileID: 1244024372759254, guid: 05025ad8d71ef4d4ba078f18cd08bcd8, type: 3}
       propertyPath: m_Name
       value: EnergyCell_1_15
@@ -10517,7 +10521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
   m_InteractionManager: {fileID: 0}
   m_InteractionLayers:
-    m_Bits: 16
+    m_Bits: 134217728
   m_Handedness: 0
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
@@ -13088,7 +13092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
   m_InteractionManager: {fileID: 0}
   m_InteractionLayers:
-    m_Bits: 4
+    m_Bits: 33554432
   m_Handedness: 0
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
@@ -13903,7 +13907,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 17
+    m_Bits: 134217731
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -21379,7 +21383,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4030802598477255710, guid: 21292ea4d691cf14d8ed5fdf83fb5b53, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 5
+      value: 33554435
       objectReference: {fileID: 0}
     - target: {fileID: 1244024372759254, guid: 21292ea4d691cf14d8ed5fdf83fb5b53, type: 3}
       propertyPath: m_Name
@@ -22137,7 +22141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
   m_InteractionManager: {fileID: 0}
   m_InteractionLayers:
-    m_Bits: 2
+    m_Bits: 16777216
   m_Handedness: 0
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
@@ -23009,7 +23013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor
   m_InteractionManager: {fileID: 0}
   m_InteractionLayers:
-    m_Bits: 16
+    m_Bits: 134217728
   m_Handedness: 0
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
