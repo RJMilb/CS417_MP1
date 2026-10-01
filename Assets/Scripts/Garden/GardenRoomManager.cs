@@ -78,4 +78,9 @@ public class GardenRoomManager : MonoBehaviour
         // Reloads the current active scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void LeaveRoom()
+    {
+        SceneManager.LoadScene("TimeRoom");
+    }
 }

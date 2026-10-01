@@ -11,8 +11,6 @@ public class SprinklerController : MonoBehaviour
 
     public void IncrementLevel()
     {
-        if (isFixed) return;
-        
         outputLevel = Mathf.Clamp(outputLevel + 1, 0, 100);
         UpdateTextDisplay();
         CheckGoal();
@@ -20,8 +18,6 @@ public class SprinklerController : MonoBehaviour
 
     public void DecrementLevel()
     {
-        if (isFixed) return;
-        
         outputLevel = Mathf.Clamp(outputLevel - 1, 0, 100);
         UpdateTextDisplay();
     }
