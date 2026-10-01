@@ -19,7 +19,11 @@ public class GardenRoomManager : MonoBehaviour
         // Lock flowers at startup to prevent interaction
         foreach (var flower in flowers)
         {
-            if (flower != null) flower.enabled = false;
+            if (flower != null) {
+                flower.enabled = false;
+                Rigidbody rb = flower.GetComponent<Rigidbody>();
+                if (rb != null) rb.isKinematic = true;
+            }
         }
         
         if (timerText != null) timerText.gameObject.SetActive(false);
@@ -61,11 +65,15 @@ public class GardenRoomManager : MonoBehaviour
         // Unlock flowers so the player can arrange them
         foreach (var flower in flowers)
         {
-            if (flower != null) flower.enabled = true;
+            if (flower != null) {
+                flower.enabled = true;
+                Rigidbody rb = flower.GetComponent<Rigidbody>();
+                if (rb != null) rb.isKinematic = false;
+            }
         }
     }
 
-    private void ResetRoom()
+    public void ResetRoom()
     {
         // Reloads the current active scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

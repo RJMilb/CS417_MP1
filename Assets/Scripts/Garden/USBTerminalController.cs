@@ -11,6 +11,7 @@ public class USBTerminalController : MonoBehaviour
     {
         if (args.interactableObject.transform.name == validItemName)
         {
+            pointLight.intensity = 100.0f;
             pointLight.color = Color.white;
             if (roomManager != null)
             {
