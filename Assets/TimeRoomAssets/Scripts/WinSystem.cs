@@ -59,7 +59,7 @@ public class WinSystem : MonoBehaviour
     void CheckWin()
     {
         if (hasWon) return;
-        if (batteryInserted && fingerPrint) // && tool && timeCode)
+        if (batteryInserted && fingerPrint && timeCode) // && tool && timeCode)
         {
             hasWon = true;
             StartCoroutine(PlayWinSequence());
