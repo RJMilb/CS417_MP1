@@ -11074,6 +11074,7 @@ MonoBehaviour:
   - {fileID: 2955631}
   - {fileID: 1555108335}
   tvScreenText: {fileID: 1486617085}
+  podiumText: {fileID: 1770814028}
   safeCode: 48151
 --- !u!4 &1870944404
 Transform:
