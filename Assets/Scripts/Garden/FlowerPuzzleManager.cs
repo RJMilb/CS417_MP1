@@ -6,7 +6,8 @@ public class FlowerPuzzleManager : MonoBehaviour
 {
     [Header("Scene References")]
     public UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor[] pots = new UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor[5]; 
-    public TextMeshProUGUI tvScreenText; 
+    public TextMeshProUGUI tvScreenText;
+    public TextMeshProUGUI podiumText; 
     
     [Header("Puzzle Settings")]
     public string safeCode = "48151";
@@ -27,6 +28,7 @@ public class FlowerPuzzleManager : MonoBehaviour
             if (CheckOrder(phaseOneGoal))
             {
                 phaseOneComplete = true;
+                podiumText.text = "The screen on the back wall will reveal a code once the two correct flower orders are achieved.\n1/2";
                 RevealNumbers();
             }
         }
@@ -35,6 +37,7 @@ public class FlowerPuzzleManager : MonoBehaviour
             if (CheckOrder(phaseTwoGoal))
             {
                 phaseTwoComplete = true;
+                podiumText.text = "The screen on the back wall will reveal a code once the two correct flower orders are achieved.\n2/2";
                 tvScreenText.text = safeCode;
             }
         }
