@@ -11,8 +11,6 @@ public class FlowerPuzzleManager : MonoBehaviour
     [Header("Puzzle Settings")]
     public string safeCode = "48151";
 
-    public TextMeshProUGUI debug;
-
     private bool phaseOneComplete = false;
     private bool phaseTwoComplete = false;
 
@@ -21,9 +19,7 @@ public class FlowerPuzzleManager : MonoBehaviour
 
     // Triggered by the Socket Interactors every time a flower is placed
     public void OnFlowerPlacedOrRemoved()
-    {   
-        debug.text = "FLOWER PLACED/REMOVED";
-
+    {
         if (phaseTwoComplete) return;
 
         if (!phaseOneComplete)
